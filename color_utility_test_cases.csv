@@ -1,0 +1,11 @@
+Test Case ID,Test Case Name,Description,Input,Expected Output,Notes
+TC_001,ValidPairNumber_ShouldReturnCorrectColors,Valid pair number returns the correct major and minor colors,4,"White, Brown",Pair number to color mapping
+TC_002,ValidPairNumber_ShouldReturnCorrectColors,Valid pair number returns the correct major and minor colors,5,"White, Slate",Pair number to color mapping
+TC_003,InvalidMajorColor_ShouldThrowError,Invalid major color throws an exception,"Purple, Blue","Exception: 'Major color ""Purple"" not found'",Invalid major color
+TC_004,InvalidMinorColor_ShouldThrowError,Invalid minor color throws an exception,"White, Cyan","Exception: 'Minor color ""Cyan"" not found'",Invalid minor color
+TC_005,ValidColorPair_ShouldReturnCorrectPairNumber,Valid major and minor color pair returns the correct pair number,"Black, Orange",12,Color pair to pair number mapping
+TC_006,ValidColorPair_ShouldReturnCorrectPairNumber,Valid major and minor color pair returns the correct pair number,"Violet, Slate",25,Color pair to pair number mapping
+TC_007,ValidColorPair_ShouldReturnCorrectPairNumber,Valid major and minor color pair returns the correct pair number,"Red, Orange",7,Color pair to pair number mapping
+TC_008,OutOfRangePairNumber_ShouldThrowError,Pair number out of range throws an exception,26,Exception: 'Major index out of range',Invalid pair number
+TC_009,ValidColorPairWithMajorColorIndexBoundary_ShouldReturnCorrectPairNumber,Valid color pair with major color boundary returns correct pair number,"Violet, Blue",21,Boundary case for major color
+TC_010,ValidColorPairWithMinorColorIndexBoundary_ShouldReturnCorrectPairNumber,Valid color pair with minor color boundary returns correct pair number,"White, Slate",5,Boundary case for minor color
